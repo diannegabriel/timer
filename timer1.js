@@ -14,6 +14,7 @@ const timer = function(array) {
     if (element >= 0) {
       setTimeout(() => {
         process.stdout.write('beep! ');
+        process.stdout.write('\x07');
       }, time * element);
     }
   }
